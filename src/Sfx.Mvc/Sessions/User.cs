@@ -45,7 +45,9 @@ namespace Sfx.Mvc
 				return null;
 			}
 
-			return string.Format(value, args);
+			// TODO: traducir value antes de llamar a format.
+
+			return args.Length > 0 ? string.Format(value, args) : value;
 		}
 	}
 }
