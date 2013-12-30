@@ -59,6 +59,7 @@ namespace Sfx.Mvc
 			template.AddFunction("getErrorClass", (string s) => viewData.Errors[s] != null ? "error" : null);
 			template.AddFunction("hasError", (string s) => viewData.Errors[s] != null);
 			template.AddFunction("getValue", (string s) => GetValue(s, viewData, context));
+			template.AddFunction("t", (string s) => context.User.T(s));
 		}
 
 		static object GetValue(string key, ViewData viewData, T context)
