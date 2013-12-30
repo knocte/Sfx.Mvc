@@ -1,0 +1,41 @@
+#searchWrapper
+{
+	font-size: 15px;
+}
+
+.search
+{
+	width: 300px;
+	display: inline; 
+}
+
+.searchContainer
+{
+	display: inline;
+}
+
+ input[type="text"].searchText
+{
+	display: inline; 
+	width:200px;
+}
+
+.searchValue
+{
+	display: inline; 
+	width:200px;
+}
+
+.logicalOperator 
+{
+	width: 35px;
+	display: inline; 
+}
+
+.emptyLogicalOperator
+{
+	display: inline; 
+	padding-left: 35px;
+}
+
+

@@ -1,0 +1,41 @@
+
+
+.button{
+	color: #222;
+	font-weight: normal;
+	font-style: normal;
+	border:1px solid #A4A4A4; 
+	font-size: 0.875em;
+	border-radius: 3px; 
+	padding: 2px 10px;
+	cursor: pointer;
+}
+
+.button:hover{
+	border:1px solid #8F8F8F;
+	background-color: #C4C4C4; 
+}
+
+.button2 {
+	padding: 4px 20px;
+	font-size: 1em;
+}
+.button3 {
+	padding: 7px 40px;
+	font-size: 1.2em;
+}
+
+.button.postfix {
+  border: solid 1px #ccc;
+  border-left: none;
+  color: #333333;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  font-size: 0.875em;
+  height: 2.31em;
+  line-height: 2.31em;
+  padding: 0 1em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

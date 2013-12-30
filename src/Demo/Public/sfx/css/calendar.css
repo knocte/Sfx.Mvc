@@ -1,0 +1,68 @@
+
+
+.calendar
+{    
+    border-collapse:collapse;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.calendarHeader
+{
+    background: #ddd;
+    padding:5px 10px;
+}
+.calendarWeekDays
+{
+    background: #ddd;
+}
+.calendar td
+{    
+    text-align:center;
+    cursor:pointer;
+    border: 1px solid #ccc;
+    padding:5px 10px;
+}
+.calendarDay
+{   
+    padding:5px 10px;
+}
+.calendarDayGrayDay
+{ 
+    color:Gray;  
+}
+.today
+{
+    color:Orange;   
+}
+.datepicker
+{
+    background-color:#fff;
+	background-image: url(/sfx/img/calendar.gif);
+	background-repeat: no-repeat;
+	background-position: 99% 50%;
+	cursor: pointer;
+}
+
+.datePickerInput
+{
+    text-align:right;
+}
+
+
+.largecalendar
+{    
+    border-collapse:collapse;
+    border: 1px solid #ccc;
+}
+.largecalendar td
+{    
+    text-align:center;
+    cursor:pointer;
+    border: 1px solid #ccc;
+    padding:5px 10px;
+}
+.largecalendar .calendarDay
+{    
+    padding:15px 20px;
+}

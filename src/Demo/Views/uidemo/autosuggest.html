@@ -1,0 +1,65 @@
+{{ extends base.html }}
+
+
+{{ block body }}
+  		<div style="margin:100px auto;width:600px">
+  			<h2>Autosugerir</h2>
+			 <input type="text" placeholder="País" id="country" value="">
+		</div>  
+		
+  		<div style="margin:100px auto;width:600px">
+  			<h2>Autosugerir 2</h2>
+			 <input type="text" placeholder="País" id="cid" value="">
+		</div>  
+
+  		<div style="margin:100px auto;width:600px">
+  			<h2>Autosugerir 3</h2>
+			 <input type="text" placeholder="País" id="country2" style='display:inline;width:auto'>
+			 -----------------------
+			 <input type="text" placeholder="País" id="country3" style='display:inline;width:auto'>
+		</div>  
+
+	  	<script type="text/javascript">
+
+		    Sfx.autosuggest('country', {
+		    	data: [
+		    		'Spain', 'Portugal', 'France', 'Italy'
+		    	],
+		    	selectedItemStyle: 'selectedItemStyle'
+		    });
+
+		    Sfx.autosuggest('cid', {
+		    	data: [
+		    		{ id: 2, text: 'Spain'},
+		    		{ id: 22, text: 'Portugal'},
+		    		{ id: 23, text: 'France'},
+		    		{ id: 24, text: 'Italy'}
+		    	],
+		    	onItemSelected: function(item){
+		    		alert(item.id);
+		    	}
+		    });
+
+		    function selectItemFunc() {
+		    	alert(2);
+		    }
+
+		    Sfx.autosuggest('country2', {
+		    	sourceInput: 'country3',
+		    	onItemSelected: selectItemFunc,
+		    	disableIdInput: true,
+		    	data: [
+		    		'Spain', 'Portugal', 'France', 'Italy'
+		    	],
+		    	selectedItemStyle: 'selectedItemStyle'
+		    });
+	  	</script>
+{{ end }}
+
+
+
+
+
+
+
+

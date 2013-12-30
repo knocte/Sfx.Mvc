@@ -1,0 +1,34 @@
+
+
+.modalLayer {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000;
+	opacity: 0.65;
+}
+
+.modalBox {
+	position: absolute;
+	overflow: hidden;
+	background-color: #eee;
+    -webkit-box-shadow: 1px 1px 6px 1px #444;
+    box-shadow: 1px 1px 6px 1px #444;
+}
+
+.modalBox .alertTitle {
+	background-color: #ddd;
+	padding: 1em 2em;
+}
+
+.modalBox .alertBody {
+	padding: 2em;
+}
+
+.alertButtons {
+	text-align: right;
+	padding: 1em 2em;
+}

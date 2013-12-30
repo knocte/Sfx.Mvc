@@ -1,0 +1,98 @@
+
+
+
+.gridWrapper {
+  	width: 100%;
+	overflow: auto;
+  	margin: 0 auto;
+}
+
+
+.grid {
+	border-collapse: collapse;
+  	width: 100%;
+}
+
+
+.grid th,
+.grid td {
+    white-space: nowrap;
+	text-align: left;	
+	overflow: hidden;
+}
+
+.grid th {
+	font-weight: bold;
+	background-color: #EDF1FF;
+	padding: 0.4em 1em;
+	color:#444;
+	border-right:solid 1px #eee;
+}
+
+.grid .header {
+}
+
+.grid tr {
+	border-top: 0;
+}
+
+.grid td {
+	padding: 0.4em 1em;
+	border-right:solid 1px #eee;
+}
+
+.grid .odd {
+	background-color: #F5F7FF;
+}
+
+.grid .value {
+	text-align: right;
+}
+
+
+
+.subnav {
+	margin: 1.7em 0;
+	text-align: center;
+}
+
+.subnav a {
+	color: #999;
+	text-decoration: none;
+	font-size: 0.875em;
+	padding: 0.3em 1em;
+}
+
+.subnav .active {
+	border-radius: 500px;
+	font-weight: bold;
+	background-color: #9bb1cb;
+	color: white;
+}
+
+
+
+/* Estilo compacto para editGrid */
+.editGrid .grid td {
+	padding: 0px 0;
+	border: none;
+}
+.editGrid input,
+.editGrid select {
+	width: 100% !important;
+}
+.editGrid .datepicker {
+	background-image: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

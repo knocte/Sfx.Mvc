@@ -1,0 +1,19 @@
+﻿{{ extends ~/includes/base.html }}
+
+{{ block styles }}
+    <link href="/css/foo.css?cachebreaker={{ .CacheBreaker }}" rel="stylesheet" type="text/css" />
+{{ end }}
+
+
+{{ block page }}
+    <h1>This is a test of extended views!</h1>
+	<p>{{ t("this is a test of escaped quotes \" in a function argument")  }}</p>	
+	<p>
+		{{ t("this is a 
+		       multiline test") }}
+	</p>	
+	<p>{{ html("this is a safe <html /> string")  }}</p>	
+	<hr />
+	<p>SessionId: {{ .User.SessionId }}</p>
+	<p>Culture: {{ .User.Culture.Name }}</p>
+{{ end }}

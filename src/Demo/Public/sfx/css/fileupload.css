@@ -1,0 +1,44 @@
+#progress p
+{
+	display: block;
+	width: 240px;
+	padding: 2px 5px;
+	margin: 2px 0;
+	border: 1px inset #446;
+	border-radius: 5px;
+	background: #eee url("/s/Resources/public/img/progress.png") 100% 0 repeat-y;
+}
+
+#progress.success p
+{
+	background: #0c0 none 0 0 no-repeat;
+}
+
+#progress.failure p
+{
+	background: #c00 none 0 0 no-repeat;
+}
+
+div.success {
+	color: green;
+	font-size : 13px;
+	font-weight: bold;
+}
+
+div.failure {
+	color: red;
+	font-size : 14px;
+	font-weight: bold;
+}
+
+span.success {
+	color: green;
+	font-size : 13px;
+	font-weight: bold;
+}
+
+span.error {
+	color: red;
+	font-size : 14px;
+	font-weight: bold;
+}

@@ -1,0 +1,15 @@
+﻿{{ extends ~/includes/base.html }}
+
+{{ block styles }}
+    <link href="/css/foo.css" rel="stylesheet" type="text/css" />
+{{ end }}
+
+{{ block page }}
+		<form method="post">
+			Send error 
+			<input type="checkbox" name="error" />
+			<input type="submit" />
+		</form>
+{{ end }}
+
+

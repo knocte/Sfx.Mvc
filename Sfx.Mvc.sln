@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sfx.Mvc", "src\Sfx.Mvc\Sfx.Mvc.csproj", "{93CBD9EB-215D-4D41-A38F-A389F4224991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "src\Demo\Demo.csproj", "{246D822C-6BDA-46B1-B219-743C1F0F90B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sfx.Json", "lib\Sfx.Json\src\Sfx.Json\Sfx.Json.csproj", "{2A482413-69A7-4341-B306-C05ABF98BB32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sfx.Sql", "lib\Sfx.Sql\src\Sfx.Sql\Sfx.Sql.csproj", "{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sfx.Templates", "lib\Sfx.Templates\src\Sfx.Templates\Sfx.Templates.csproj", "{5053A5A8-102C-437F-A435-23C5FD372545}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Debug|x86.ActiveCfg = Debug|x86
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Debug|x86.Build.0 = Debug|x86
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Release|x86.ActiveCfg = Release|x86
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Release|x86.Build.0 = Release|x86
+		{246D822C-6BDA-46B1-B219-743C1F0F90B3}.Debug|x86.ActiveCfg = Debug|x86
+		{246D822C-6BDA-46B1-B219-743C1F0F90B3}.Debug|x86.Build.0 = Debug|x86
+		{246D822C-6BDA-46B1-B219-743C1F0F90B3}.Release|x86.ActiveCfg = Release|x86
+		{246D822C-6BDA-46B1-B219-743C1F0F90B3}.Release|x86.Build.0 = Release|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Debug|x86.ActiveCfg = Debug|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Debug|x86.Build.0 = Debug|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Release|x86.ActiveCfg = Release|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Release|x86.Build.0 = Release|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Debug|x86.ActiveCfg = Debug|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Debug|x86.Build.0 = Debug|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Release|x86.ActiveCfg = Release|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Release|x86.Build.0 = Release|x86
+		{93CBD9EB-215D-4D41-A38F-A389F4224991}.Debug|x86.ActiveCfg = Debug|x86
+		{93CBD9EB-215D-4D41-A38F-A389F4224991}.Debug|x86.Build.0 = Debug|x86
+		{93CBD9EB-215D-4D41-A38F-A389F4224991}.Release|x86.ActiveCfg = Release|x86
+		{93CBD9EB-215D-4D41-A38F-A389F4224991}.Release|x86.Build.0 = Release|x86
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Debug|x86.ActiveCfg = Debug|x86
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Debug|x86.Build.0 = Debug|x86
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Release|x86.ActiveCfg = Release|x86
+		{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}.Release|x86.Build.0 = Release|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Debug|x86.ActiveCfg = Debug|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Debug|x86.Build.0 = Debug|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Release|x86.ActiveCfg = Release|x86
+		{2A482413-69A7-4341-B306-C05ABF98BB32}.Release|x86.Build.0 = Release|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Debug|x86.ActiveCfg = Debug|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Debug|x86.Build.0 = Debug|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Release|x86.ActiveCfg = Release|x86
+		{5053A5A8-102C-437F-A435-23C5FD372545}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = src\Demo\Demo.csproj
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	    <title>S Style Guide</title>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/s.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/menu.css" />
+	    <script src="/s/Resources/public/scripts/sfx.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.ajax.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.dom.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.events.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.menu.js"></script>
+	  </head>
+	  <body>
+	  
+	  		<div style="margin:100px auto;width:600px">
+	  			<h2>Menu</h2>
+				<ul class='menu mainMenu'>
+					<li>
+						<span id='menu_reservas' class='menuItem'>Reservas</span>
+							<div id='submenu_reservas' class='submenu hidden'>
+								<div class='submenuBlock'>
+									<a href='/bookings'>Una opción</a>
+									<a href='/bookings'>Una opción 2</a>
+									<a href='/bookings'>Una opción 3</a>
+									<a href='/bookings'>Una opción 4</a>
+								</div>
+							</div>
+					</li>
+					<li>
+						<span id='menu_superadmin' class='menuItem'>SuperAdmin</span>
+							<div id='submenu_superadmin' class='submenu hidden'>
+								<div class='submenuBlock'>
+									<div class='separator'>Reservas</div>
+									<a href='/bookings/center'>Centros</a>
+									<a href='/bookings/user'>Usuarios</a>
+									
+								</div>
+								<div class='submenuBlock'>
+									<div class='separator'>Bases de datos</div>
+									<a href='/superadmin/db/databases'>Bases de datos</a>
+									<a href='/superadmin/dbconnections'>Conexiones</a>
+									
+								</div>
+								<div class='submenuBlock'>
+									<div class='separator'>Recursos</div>
+									<a href='/superadmin/main/actions'>Actions</a>
+									<a href='/superadmin/main/Resources'>Recursos</a>
+									<a href='/superadmin/widget/demo'>Diseñador</a>
+								</div>
+							</div>
+					</li>
+					<li>
+						<span class='menuItem'><a href='javascript:alert(1);return false;'>ClickMe!</a></span>
+					</li>
+				</ul>
+			</div>
+
+
+			
+			<div style="margin:100px auto;width:600px">
+	  			<h2>SubMenu</h2>
+				<ul class='menu subMenu round'>
+					<li>
+						<span class='menuItem hasArrow'>Otra opción</span>
+						<span id='menu_1' class='menuItem downArrow'></span>
+						<div id='submenu_1' class='submenu hidden'>
+							<div class='submenuBlock'>
+								<a href='/bookings'>Submenu Inicio</a>
+								<a href='/bookings'>Submenu Inicio 2</a>
+								<a href='/bookings'>Submenu Inicio 3</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class='menuItem hasArrow'>Otra más</span>
+						<span id='menu_2' class='menuItem downArrow'></span>
+						<div id='submenu_2' class='submenu hidden'>
+							<div class='submenuBlock'>
+								<a href='/bookings'>Submenu Inicio 33</a>
+								<a href='/bookings'>Submenu Inicio 882</a>
+								<a href='/bookings'>Submenu Inicio 388</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class='menuItem'><a href='javascript:alert(1);return false;'>ClickMe!</a></span>
+					</li>
+				</ul>
+			</div>
+
+
+
+			
+			<div style="margin:100px auto;width:600px">
+	  			<h2>Otro SubMenu</h2>
+				<ul class='menu'>
+					<li>
+						<span id='menu_3' class='menuItem'>Otra opción</span>
+						<div id='submenu_3' class='submenu hidden'>
+							<div class='submenuBlock'>
+								<a href='/bookings'>Submenu Inicio</a>
+								<a href='/bookings'>Submenu Inicio 2</a>
+								<a href='/bookings'>Submenu Inicio 3</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span id='menu_4' class='menuItem'>Otra opción 2</span>
+						<div id='submenu_4' class='submenu hidden'>
+							<div class='submenuBlock'>
+								<a href='/bookings'>Submenu Inicio 33</a>
+								<a href='/bookings'>Submenu Inicio 882</a>
+								<a href='/bookings'>Submenu Inicio 388</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+	  </body>
+  </html>

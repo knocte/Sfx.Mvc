@@ -1,0 +1,31 @@
+
+
+
+.autosuggestWindow {
+	background-color: #fff;
+	border: solid 1px #ccc;
+	min-width: 350px;
+	-webkit-box-shadow: 1px 1px 6px 1px #aaa;
+	box-shadow: 1px 1px 6px 1px #aaa;
+}
+
+.autosuggestWindow div {
+	padding: 0.45em 15px;
+	border: solid 1px transparent;
+	cursor: pointer;
+}
+
+.autosuggestWindow div:hover,
+.autosuggestWindow .selectedRow {
+	border: solid 1px #ccc;
+	background-color: #ddd;
+}
+
+.autosuggest {
+	overflow: hidden;
+	position: relative;
+}
+
+.autosuggest.selectedItem {
+	background-color: #EDF7FF;
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{246D822C-6BDA-46B1-B219-743C1F0F90B3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Demo</RootNamespace>
+    <AssemblyName>Sfx.WebApp.Tests</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ErrorsController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Public\" />
+    <Folder Include="Views\account\" />
+    <Folder Include="Views\includes\" />
+    <Folder Include="Views\uidemo\" />
+    <Folder Include="Views\admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\account\login.html" />
+    <None Include="Views\includes\base.html" />
+    <None Include="Views\includes\footer.html" />
+    <None Include="Views\includes\header.html" />
+    <None Include="Views\includes\login.html" />
+    <None Include="Views\uidemo\all.html" />
+    <None Include="Views\uidemo\autosuggest.html" />
+    <None Include="Views\uidemo\base.html" />
+    <None Include="Views\uidemo\calendar.html" />
+    <None Include="Views\uidemo\errors.html" />
+    <None Include="Views\uidemo\errors.html.orig" />
+    <None Include="Views\uidemo\fileupload.html" />
+    <None Include="Views\uidemo\menu.html" />
+    <None Include="Views\uidemo\script.html" />
+    <None Include="Views\uidemo\search.html" />
+    <None Include="Views\uidemo\tags.html" />
+    <None Include="Views\admin\index.html" />
+    <None Include="settings.conf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sfx.Mvc\Sfx.Mvc.csproj">
+      <Project>{93CBD9EB-215D-4D41-A38F-A389F4224991}</Project>
+      <Name>Sfx.Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Sfx.Sql\src\Sfx.Sql\Sfx.Sql.csproj">
+      <Project>{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}</Project>
+      <Name>Sfx.Sql</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

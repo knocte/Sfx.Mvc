@@ -1,0 +1,24 @@
+{{ extends base.html }}
+
+{{ block body }}
+
+	  	<div class="page">
+		        <h1>Tags</h1>
+		        <hr>
+		        <div id="tag" class="container" ></div>
+	  	</div>
+
+	  	<script type="text/javascript">
+
+		    Sfx.tags('tag',{
+		    	data: [
+		    		{ id: 2, text: 'Spain'},
+		    		{ id: 22, text: 'Portugal'},
+		    		{ id: 23, text: 'France'},
+		    		{ id: 24, text: 'Italy'}
+		    	],
+		    	selectedItemStyle: 'selectedItemStyle'
+		    });
+	  	</script>
+
+{{ end }}

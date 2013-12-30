@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+		{{ block styles }}{{end}}
+    </head>
+	<body>   
+        <div class="header">       
+            <div class="loginInfo">     
+	            {{ if isNotNull(.User.Name) }}
+	            		Welcome <strong>{{ html(.User.Name) }}</strong> <br />
+	            		<a href="account/logout">logout</a>
+	            {{ else }}
+	            		<a href="/account/login">login</a>
+	            {{ end }}
+            </div>
+            <div class="companyLogo">Syltek</div>
+        </div>  
+
+		<div class="menu">
+			<div class="page"> 
+				<a href="/documentation/readme">Readme</a> |
+				<a href="/admin">Admin</a> |
+				<a href="/foo/extended">Extended Views</a> |
+				<a href="/foo/sessions">Modificar sesión</a> |
+				<a href="/foo/readsession">Leer sesión</a> |
+				<a href="/uidemo/all">UI Demos</a> |
+				<a href="/uidemo/autosuggest">Autosuggest</a> |
+				<a href="/foo/flash">Flash</a> |
+				<a href="/foo/errors">Errors</a>
+			</div>
+		</div>
+
+		<div class="page"> 
+	    	{{ if .IsNotValid }}	
+				<div class="error">{{ getErrors() }}</div>
+			{{ end }}
+		</div>
+		
+		<div class="page"> 
+	    	{{ if isNotNull(.Flash) }}	
+				<h1>{{ .Flash.Text }}</h1>
+			{{ end }}
+		</div>
+
+		<div class="page"> 		
+			{{ block page }}{{end}}
+		</div>
+		
+		<div class="page"> 
+			<hr />
+			This page uses inherited templates
+		</div>
+		
+    </body>
+</html>

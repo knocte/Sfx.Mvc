@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93CBD9EB-215D-4D41-A38F-A389F4224991}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sfx.Mvc</RootNamespace>
+    <AssemblyName>Sfx.Web</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Sessions\Sessions.cs" />
+    <Compile Include="Sessions\Tenant.cs" />
+    <Compile Include="Sessions\User.cs" />
+    <Compile Include="DbUtil.cs" />
+    <Compile Include="Controller.cs" />
+    <Compile Include="AdminAttribute.cs" />
+    <Compile Include="HttpServer\HttpMultipartParser.cs" />
+    <Compile Include="HttpServer\HttpPostedFile.cs" />
+    <Compile Include="HttpServer\HttpServer.cs" />
+    <Compile Include="HttpServer\IHttpPostedFile.cs" />
+    <Compile Include="Mvc\ClientCss.cs" />
+    <Compile Include="Mvc\ClientScrip.cs" />
+    <Compile Include="Mvc\Dispatcher.cs" />
+    <Compile Include="Mvc\FilterAttribute.cs" />
+    <Compile Include="Mvc\HttpCookie.cs" />
+    <Compile Include="Mvc\HttpRequest.cs" />
+    <Compile Include="Mvc\HttpResponse.cs" />
+    <Compile Include="Mvc\MvcController.cs" />
+    <Compile Include="Mvc\RequestBuilder.cs" />
+    <Compile Include="Mvc\Route.cs" />
+    <Compile Include="Mvc\ViewData.cs" />
+    <Compile Include="Mvc\ViewRenderer.cs" />
+    <Compile Include="Util\Cache.cs" />
+    <Compile Include="Util\Logger.cs" />
+    <Compile Include="Util\Map.cs" />
+    <Compile Include="Util\Settings.cs" />
+    <Compile Include="Util\SfxException.cs" />
+    <Compile Include="Util\UrlUtil.cs" />
+    <Compile Include="Mvc\MvcContext.cs" />
+    <Compile Include="Mvc\AppServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sessions\" />
+    <Folder Include="Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\Sfx.Json\src\Sfx.Json\Sfx.Json.csproj">
+      <Project>{2A482413-69A7-4341-B306-C05ABF98BB32}</Project>
+      <Name>Sfx.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Sfx.Sql\src\Sfx.Sql\Sfx.Sql.csproj">
+      <Project>{0DE1EB2F-BE9A-42DD-A41E-15DCD3A98135}</Project>
+      <Name>Sfx.Sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\lib\Sfx.Templates\src\Sfx.Templates\Sfx.Templates.csproj">
+      <Project>{5053A5A8-102C-437F-A435-23C5FD372545}</Project>
+      <Name>Sfx.Templates</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

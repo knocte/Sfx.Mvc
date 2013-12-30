@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sfx UI Demos</title>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<link href="/css/foo.css" rel="stylesheet" type="text/css" />
+	    <link rel="stylesheet" href="/sfx/css/s.css" />
+	    <link rel="stylesheet" href="/sfx/css/form.css" />
+	    <link rel="stylesheet" href="/sfx/css/calendar.css" />
+	    <link rel="stylesheet" href="/sfx/css/autosuggest.css" />
+	    <link rel="stylesheet" href="/sfx/css/tags.css" />
+	    <script src="/sfx/scripts/sfx.js"></script>
+	    <script src="/sfx/scripts/sfx.ajax.js"></script>
+	    <script src="/sfx/scripts/sfx.dom.js"></script>
+	    <script src="/sfx/scripts/sfx.events.js"></script>
+	    <script src="/sfx/scripts/sfx.calendar.js"></script>
+	    <script src="/sfx/scripts/sfx.autosuggest.js"></script>
+	    <script src="/sfx/scripts/sfx.tags.js"></script>
+    </head>
+	<body>    
+		<div class="header">       
+            <div class="loginInfo">     
+	            {{ if isNotNull(.User.Name) }}
+	            		Welcome <strong>{{ html(.User.Name) }}</strong> <br />
+	            		<a href="account/logout">logout</a>
+	            {{ else }}
+	            		<a href="/account/login">login</a>
+	            {{ end }}
+            </div>
+            <div class="companyLogo">Syltek</div>
+        </div>  
+
+		<div class="menu">
+			<div class="page"> 
+				<a href="/documentation/readme">Readme</a> 
+				<a href="/admin">Admin</a> |
+				<a href="/foo/extended">Extended Views</a> |
+				<a href="/foo/sessions">Modificar sesión</a> |
+				<a href="/foo/readsession">Leer sesión</a> |
+				<a href="/uidemo/all">UI Demos</a> |
+				<a href="/uidemo/autosuggest">Autosuggest</a> |
+				<a href="/foo/flash">Flash</a> |
+				<a href="/foo/errors">Errors</a>
+			</div>
+		</div>
+        
+		<div class="page"> 		
+			{{ block body }}{{end}}
+		</div>
+    </body>
+</html>

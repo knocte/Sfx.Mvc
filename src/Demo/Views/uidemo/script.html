@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sfx UI Demos</title>
+	    <meta charset="utf-8" />
+	    {{ .ClientScript }}
+    </head>
+	<body>    
+	
+		<pre>
+			Código original:
+
+			public HtmlResponse Script()
+			{
+				this.ViewData.ClientScript.Variables.Add("name", "juan");
+				this.ViewData.ClientScript.Scripts.Add("setTimeout(function(){ alert(scriptVars.name) }, 600)");
+				return this.View();
+			}
+		</pre>	
+		
+    </body>
+</html>

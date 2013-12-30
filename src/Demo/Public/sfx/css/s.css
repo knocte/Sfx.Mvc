@@ -1,0 +1,281 @@
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+body {
+  padding:0;
+  margin:0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto; 
+}
+
+img {
+  display: inline-block; 
+  -ms-interpolation-mode: bicubic;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus,
+a:active,
+a:hover {
+  outline: 0; 
+}
+
+small {
+  font-size: 80%; 
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+.body {
+  margin: 0 20px;
+  clear: both;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+.row:before, 
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.column {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  float: left; 
+}
+
+.column.widthcentered,
+.columns.widthcentered {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important; 
+} 
+
+
+.width1 {
+  position: relative;
+  width: 8.33333%; 
+}
+
+.width2 {
+  position: relative;
+  width: 16.66667%; 
+}
+
+.width3 {
+  position: relative;
+  width: 25%; 
+}
+
+.width4 {
+  position: relative;
+  width: 33.33333%; 
+}
+
+.width5 {
+  position: relative;
+  width: 41.66667%; 
+}
+
+.width6 {
+  position: relative;
+  width: 50%; 
+}
+
+.width7 {
+  position: relative;
+  width: 58.33333%; 
+}
+
+.width8 {
+  position: relative;
+  width: 66.66667%; 
+}
+
+.width9 {
+  position: relative;
+  width: 75%; 
+}
+
+.width10 {
+  position: relative;
+  width: 83.33333%; 
+}
+
+.width11 {
+  position: relative;
+  width: 91.66667%; 
+}
+
+.width12 {
+  position: relative;
+  width: 100%; 
+}
+
+.row .offset1 {
+  position: relative;
+  margin-left: 8.33333%; 
+}
+
+.row .offset2 {
+  position: relative;
+  margin-left: 16.66667%; 
+}
+
+.row .offset3 {
+  position: relative;
+  margin-left: 25%; 
+}
+
+.row .offset4 {
+  position: relative;
+  margin-left: 33.33333%; 
+}
+
+.row .offset5 {
+  position: relative;
+  margin-left: 41.66667%; 
+}
+
+.row .offset6 {
+  position: relative;
+  margin-left: 50%; 
+}
+
+.row .offset7 {
+  position: relative;
+  margin-left: 58.33333%; 
+}
+
+.row .offset8 {
+  position: relative;
+  margin-left: 66.66667%; 
+}
+
+.row .offset9 {
+  position: relative;
+  margin-left: 75%; 
+}
+
+.row .offset10 {
+  position: relative;
+  margin-left: 83.33333%; 
+}
+
+
+
+@media only screen and (max-width: 40em) {
+  body {
+    font-size:100%;
+  }
+}
+
+
+
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.left {
+  float: left !important; 
+}
+
+.right {
+  float: right !important; 
+}
+
+.text-left {
+  text-align: left !important; 
+}
+
+.text-right {
+  text-align: right !important; 
+}
+
+.text-center {
+  text-align: center !important; 
+}
+
+.text-justify {
+  text-align: justify !important; 
+}
+
+.round {
+  border-radius: 3px;
+}
+
+pre.debug {
+	line-height:1.3em;
+	font-family: monospace;
+	margin:10px;
+	padding:10px;
+	background-color: #ddd;
+	border: solid 1px #aaa;
+}
+
+/* Hacer que se muestren bien los controles en el mapa */
+#map img { 
+  max-width: none;
+}
+#map label { 
+  width: auto; display:inline; 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

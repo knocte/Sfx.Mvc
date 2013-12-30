@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <link href="/css/foo.css" rel="stylesheet" type="text/css" />
+    </head>
+	<body>   
+        <div class="header">            
+            {{ if isNotNull(.User.Name) }}
+            	<div class="loginInfo">
+            		Welcome <strong>{{ html(.User.Name) }}</strong> <br />
+            		<a href="account/logout">logout</a>
+            	</div>
+            {{ end }}
+            <div class="companyLogo">Syltek</div>
+        </div> 
+
+		<div class="menu">
+			<div class="page"> 
+				<a href="/documentation/readme">Readme</a> 
+				<a href="/admin">Admin</a> |
+				<a href="/foo/extended">Extended Views</a> |
+				<a href="/foo/sessions">Modificar sesión</a> |
+				<a href="/foo/readsession">Leer sesión</a> |
+				<a href="/uidemo/all">UI Demos</a> |
+				<a href="/uidemo/autosuggest">Autosuggest</a> |
+				<a href="/foo/flash">Flash</a> |
+				<a href="/foo/errors">Errors</a>
+			</div>
+		</div>
+
+		<div class="page"> 

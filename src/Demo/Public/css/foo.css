@@ -1,0 +1,114 @@
+﻿
+/* Reset Styles */
+html, body, div, span
+{
+    margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;
+	font-family:Arial;
+}
+
+html, body {
+     height: 100%;
+}
+
+body {
+	color:#555555;
+	background: radial-gradient(ellipse, #EBEBEB 0%,#C4E3FF 100%); /* W3C */
+}
+
+a,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header {
+	padding: 20px 0;
+	background-color: #5889D6;
+	color: #fff;
+}
+.companyLogo {
+	max-width: 900px;
+	margin:0 auto 0 auto;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.page {
+	max-width: 900px;
+	margin: 10px auto;
+}
+
+.menu {
+	background-color:#A9C3EC;
+	padding: 5px 0;
+}
+.menu a {
+	color: #444;
+}
+
+.error {
+	padding: 10px 20px;
+	color: #ff0000;
+	border: solid 1px #ff0000;
+	background-color: #FFF5F5;
+	margin-top: 30px;
+}
+
+input[type="text"] {
+	border: solid 1px #ccc;
+}
+
+
+.loginInfo {
+	float: right;
+	text-align: right;
+	padding: 10px;
+}
+
+.login {
+	max-width: 400px;
+	border: solid 1px #ccc;
+	padding: 30px 50px;
+	margin: 50px auto;
+	background-color: #fff;
+}
+
+.login h1,
+.login h3 {
+	text-align: center;
+}
+
+.login .label {
+	width: 120px;
+	text-align: right;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.login input[type="text"] {
+	padding: 5px;
+}
+.login .submit {
+	margin-left: 210px;
+	padding: 5px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

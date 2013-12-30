@@ -1,0 +1,196 @@
+
+
+/* Estilos del menu principal */
+.topMenu {
+	background-color: #134578;
+	color: #fff;
+}
+
+.menuItem {
+	display: block;
+	overflow: hidden;
+	float:left;
+	cursor: pointer;
+	display: block;
+	white-space: nowrap;
+}
+
+.menuItem .highlighted {
+}
+
+.menuItem.hasArrow {
+	padding-left: 0px;
+	padding-right: 3px;
+}
+
+.menuItem.downArrow {
+	padding: 0;
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #333;
+	display: block;
+	float:left;
+ 	margin-top: 10px;
+ 	margin-right: 8px;
+ 	cursor: pointer;
+}
+
+
+.topMenu .highlighted,
+.topMenu .textNode:hover {
+	background-color: #2169B3;
+}
+.topMenu .textNode,
+.topMenu a.menuItem,
+.topMenu a.menuItem:visited{
+	padding: 3px 0.5em;
+}
+
+.textNode,
+a.menuItem,
+a.menuItem:visited {
+	color: #fff;
+	text-decoration:none;
+	display: block;
+	width:100%;
+	padding: 5px 0.5em;
+}
+
+.menuItem a,
+.menuItem a:visited {
+	color: #fff;
+	text-decoration:none;
+	display: block;
+	width:100%;
+	padding: 5px 0.5em;
+}
+
+
+/* Estilos genearles */
+.menu {
+	position: relative;
+	font-size: 87%;
+	overflow: hidden;
+}
+
+.submenu {
+	overflow: hidden;
+	border: solid 1px #ccc;
+	background-color: #fff;
+    box-shadow: 0 1px 6px 1px #aaa;
+    padding: 0.5em 1em 1em 1em;
+	font-size: 90%;
+	min-width:200px;
+}
+
+
+ul.menu,
+ul.submenu {
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	float:left;
+}
+
+.menu li,
+.submenu li {
+	display: block;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+.submenuBlock {
+	float:left;
+}
+
+
+.submenu .separator  {
+	font-weight: bold;
+	border-bottom: solid 1px #ddd; 
+}
+
+
+.submenu a,
+.submenu a:visited,
+.submenu .separator {
+	text-decoration: none;
+	color: #444;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0.5em 1em;
+}
+
+
+.submenu a:hover {
+	text-decoration: underline;
+}
+
+.submenu a:hover {
+	background-color: #eee;
+}
+
+
+.submenuVisible {
+	position: absolute;
+	display: block;
+}
+
+/*
+@media only screen and (max-width: 48em) {
+	.menu {
+	    font-size: 100%;
+	}
+
+	.menu li {
+		float:none;
+	}
+
+	.submenuVisible {
+		position: relative;
+	}
+
+	.submenu {
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    font-size: 100%;
+	}
+
+	.subMenu .highlighted,
+	.subMenu li:hover {
+	    border-radius: 3px;
+	}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

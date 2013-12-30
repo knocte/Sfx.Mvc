@@ -1,0 +1,15 @@
+﻿{{ extends ~/includes/base.html }}
+
+{{ block styles }}
+    <link href="/css/error.css" rel="stylesheet" type="text/css" />
+    <link href="/css/foo.css" rel="stylesheet" type="text/css" />
+{{ end }}
+
+
+{{ block page }}
+    <h1>This is a restricted Admin Page.</h1>
+	<p>SessionId: {{ .User.SessionId }}</p>
+	<p>Culture: {{ .User.Culture.Name }}</p>
+	<p>IsAdmin: {{ .User.IsAdmin }}</p>
+	<p>IsSuperAdmin: {{ .User.IsSuperAdmin }}</p>
+{{ end }}

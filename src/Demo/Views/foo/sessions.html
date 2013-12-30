@@ -1,0 +1,29 @@
+﻿{{ include ~/includes/header.html }}
+
+		<h1>{{ .Model.name }}</h1>
+		<p>{{ t("this is a test") }}</p>
+		<p>{{ t("this is a test {0} of {1} format", 222, 3333) }}</p>
+		<p>{{ html("this is a safe <html /> string")  }}</p>
+		
+		<p>
+			{{ t("this is a 
+			       multiline test") }}
+		</p>
+		
+		<hr />
+		<p>Session Items: {{ serialize(.User.Items) }}</p>
+		<p>UTC: {{ format(.Model.date, "dd-MM-yyyy HH:mm:ss") }}</p>
+		<p>Local: {{ localf(.Model.date, "dd-MM-yyyy HH:mm:ss") }}</p>
+		<p>SessionId: {{ .User.SessionId }}</p>
+		<p>.Request.Cookies.sfxSession.Value: {{ .Request.Cookies.sfxSession.Value }}</p>
+		<p>.Request.Cookies["sfxSession"].Value: {{ .Request.Cookies["sfxSession"].Value }}</p>
+		<p>.Request.Cookies['sfxSession'].Value: {{ .Request.Cookies['sfxSession'].Value }}</p>
+		<p>Culture: {{ .User.Culture.Name }}</p>
+		<p>IsAdmin: {{ .User.IsAdmin }}</p>
+		<p>IsSuperAdmin: {{ .User.IsSuperAdmin }}</p>
+		<p>IsCustomer: {{ .User.IsCustomer }}</p>
+
+		<hr />
+		<p>Number of requests: {{ .User.Items.counter }}</p>
+    
+{{ include  ~/includes/footer.html }}

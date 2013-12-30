@@ -1,0 +1,9 @@
+[submodule "lib/Sfx.Templates"]
+	path = lib/Sfx.Templates
+	url = https://github.com/scorredoira/Sfx.Templates
+[submodule "lib/Sfx.Json"]
+	path = lib/Sfx.Json
+	url = https://github.com/scorredoira/Sfx.Json
+[submodule "lib/Sfx.Sql"]
+	path = lib/Sfx.Sql
+	url = https://github.com/scorredoira/Sfx.Sql

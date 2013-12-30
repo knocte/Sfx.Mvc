@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	    <title>S Search Example</title>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/admin.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/dom.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/s.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/form.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/buttons.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/calendar.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/grid.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/modal.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/search.css" />
+	    <link rel="stylesheet" href="/s/Resources/public/css/autosuggest.css" />
+	    <script src="/s/Resources/public/scripts/sfx.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.ajax.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.dom.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.events.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.calendar.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.modal.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.autosuggest.js"></script>
+	    <script src="/s/Resources/public/scripts/sfx.search.js"></script>
+	  </head>
+
+	  <body>
+	  	<div class="top-bar">
+				<h2>SCL Software</h2>
+	  	</div>
+
+	  	<div class="row">
+	  		<div class="small-12 columns header">
+		        <h1></h1>
+		        <hr>
+	      </div>
+	  	</div>
+
+	  	<div class="row">
+  			<div class="columns small-4">	
+				 <a href="javascript:Sfx.showSearch('searchWrapper',data)" id="ssearch">Filtrar</a>
+  			</div>
+	  	</div>	
+	  	
+	  	<div id="searchWrapper">	
+				
+  		</div>  
+
+	  	<script type="text/javascript">
+
+		    var data = 
+		    {
+		    	'Name': 
+		    	{
+		    		label:"Nombre y Apell.",
+		    		type:"String",
+		    	},
+		    	'CreateDate': 
+		    	{
+		    		label:"Fecha Creación",
+		    		type:"DateTime",
+		    	},
+		    	'IsCool': 
+		    	{
+		    		label:"Cool",
+		    		type:"Bool",
+		    	},
+		    	'Islands':
+		    	{
+		    		label: "Islas",
+		    		type: "Picklist",
+		    		picklistValues:[
+		    			{label:"Mallorca",value:"1"},
+						{label:"Menorca",value:"2"},
+						{label:"Ibiza",value:"3"}		    	
+					]
+				},
+				'City':
+				{
+					label: "Ciudad",
+		    		type: "Reference",
+		    		data: [
+		    		'Spain', 'Portugal', 'France', 'Italy'
+		    		]
+				}
+		    };
+	  	</script>
+	  </body>
+  </html>

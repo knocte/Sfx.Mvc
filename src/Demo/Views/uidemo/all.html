@@ -1,0 +1,49 @@
+{{ extends base.html }}
+
+
+{{ block body }}
+
+  			<h2>Calendario expandido</h2>
+			<div id="calendar2"></div>
+
+  			<h2>PickCalendar</h2>
+			<input type="text" class="datepicker" onclick="Sfx.showPickCalendar(this, { format: 'dd-MM-yyyy' })" />
+
+  			<h2>Autosugerir</h2>
+			 <input type="text" placeholder="País" id="country" value="">
+
+	        <h2>Tags</h2>
+	        <div id="tag" class="container" ></div>
+
+	  	<script type="text/javascript">
+
+		    Sfx.autosuggest('country', {
+		    	url: '/uidemo/cities',
+		    	disableIdInput: true
+		    });
+
+		    Sfx.tags('tag',{
+		    	data: [
+		    		{ id: 2, text: 'Spain'},
+		    		{ id: 22, text: 'Portugal'},
+		    		{ id: 23, text: 'France'},
+		    		{ id: 24, text: 'Italy'}
+		    	],
+		    	selectedItemStyle: 'selectedItemStyle'
+		    });
+
+			Sfx.calendar("calendar2", {
+		      date: new Date(2013, 8, 1),
+		      dayClick: function(d){ alert(d.date); }
+		    });
+
+	  	</script>
+{{ end }}
+
+
+
+
+
+
+
+

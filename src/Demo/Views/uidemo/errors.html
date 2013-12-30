@@ -1,0 +1,29 @@
+{{ extends base.html }}
+
+
+{{ block body }}
+
+	{{ if .IsNotValid }}	
+		<div class="error">{{ getErrors() }}</div>
+	{{ end }}
+			
+	
+	<form method="post">
+		<input type="text" name="name" value="{{ getValue("name") }}" class="{{ getErrorClass("name") }}" />
+
+		<p></p>
+
+		Send error 
+		<input type="checkbox" name="error" checked />
+		<input type="submit" />
+	</form>
+
+{{ end }}
+
+
+
+
+
+
+
+
